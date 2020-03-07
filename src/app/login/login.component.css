@@ -1,0 +1,35 @@
+.full{
+    height: 100%;
+    background-size: cover;
+    background-image: url('src/assets/Images/Login/Login.jpg');
+
+}
+.login-page{
+    top:35
+} 
+
+.center{
+     color:white;
+     margin:0px 38% 0 44%
+}
+
+.login{
+
+    margin-left: 35%;
+    margin-top:15%;
+}
+.password{
+    margin-top:25px
+}
+.LogInBtn{
+    margin-left:550px;
+    margin-top:55px
+}
+.clearAllBtn{
+     margin-left:30px;
+    margin-top:55px
+}
+.SignUpBtn{
+    margin-left:30px;
+    margin-top:55px
+}
