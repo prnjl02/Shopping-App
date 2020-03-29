@@ -23,11 +23,12 @@ login(){
       if((this.username==this.loginDetailsArr[i].username) && (this.password==this.loginDetailsArr[i].password)){
        this.router.navigate(['home']);
       }   
-      else{
-        alert(`Username or Password is incorrect
-        Try Signup if not an existing user`);
-      }
+      // else{
+      //   alert(`Username or Password is incorrect
+      //   Try Signup if not an existing user`);
+      // }
   }
+  
 }
 
 clearAll(){

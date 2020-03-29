@@ -12,11 +12,15 @@ import{Routes,RouterModule, Router} from '@angular/router';
 import { MobileComponent } from './mobile/mobile.component';
 import { WatchesComponent } from './watches/watches.component';
 import { EarphonesComponent } from './earphones/earphones.component';
+import { FormComponent } from './form/form.component';
+// import { MatSliderModule } from '@angular/material/slider';
+// import {MatTabsModule} from '@angular/material/tabs';
 
 const appRoutes:Routes=[
 {path :'login' ,component:LoginComponent},
 {path:'signup' ,component:SignupComponent},
 {path:'home',component:HomeComponent ,children:[
+  {path:''  ,pathMatch:'full',redirectTo:'mobile'},
  {path:'mobile' , component:MobileComponent},
  {path:'watches' , component:WatchesComponent},
  {path:'earphones' , component:EarphonesComponent}
@@ -36,12 +40,15 @@ const appRoutes:Routes=[
     SignupComponent,
     MobileComponent,
     WatchesComponent,
-    EarphonesComponent
+    EarphonesComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    // MatSliderModule,
+    // MatTabsModule,
    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
